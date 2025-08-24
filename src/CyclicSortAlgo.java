@@ -2,6 +2,15 @@ import java.util.Arrays;
 
 public class CyclicSortAlgo {
 //    Used when array is in range of 1 to n.
+
+    /**
+     Tips:
+     1. If Range => [0, N]
+        then => every element will be in index = value
+
+     2. If Range => [1, N]
+        then => every element will be at index = value-1
+     */
     public static void main(String[] args) {
         int[] arr = {3, 1, 5, 4, 2};
         cyclicSort(arr);
